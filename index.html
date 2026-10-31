@@ -1,59 +1,551 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="French with Amis: learn French with Astpreet and Komalpreet. Courses, TCF preparation, speaking and writing notes." />
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <meta name="description"
+        content="French with Amis - Learn French with Astpreet and Komalpreet. French courses, TCF preparation, speaking, writing and handwritten notes.">
+
   <title>French with Amis | Learn French Together</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+
+  <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+  <link rel="preconnect"
+        href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
+
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <div class="app-shell">
-    <aside class="sidebar" id="sidebar" aria-label="Main navigation">
-      <a href="#home" class="brand" aria-label="French with Amis home"><span class="brand-mark">F<span>✦</span>A</span><span>French <b>with Amis</b><small>LEARN • GROW • SPEAK</small></span></a>
-      <div class="sidebar-label">EXPLORE</div>
-      <nav class="nav-links">
-        <a class="nav-link active" href="#home"><span>⌂</span> Home</a>
-        <a class="nav-link" href="#about"><span>♡</span> About Us</a>
-        <a class="nav-link" href="#courses"><span>▤</span> French Courses</a>
-        <a class="nav-link" href="#enroll"><span>✎</span> Enroll Now</a>
-      </nav>
-      <div class="sidebar-label">STUDY CORNER</div>
-      <nav class="nav-links">
-        <a class="nav-link" href="#notes"><span>▣</span> Handwritten Notes</a>
-        <a class="nav-link" href="#speaking"><span>◉</span> Speaking Notes</a>
-        <a class="nav-link" href="#writing"><span>✍</span> Writing Notes</a>
-        <a class="nav-link" href="#tips"><span>✦</span> Tips & Tricks</a>
-      </nav>
-      <div class="sidebar-card"><div class="sidebar-card-icon">🇫🇷</div><strong>Bonjour, future francophone!</strong><p>Your French journey starts with one small step.</p><a href="#enroll" class="mini-button">Start learning →</a></div>
-      <div class="sidebar-bottom">Made with ♥ by Astpreet & Komalpreet</div>
-    </aside>
-    <div class="main-wrap">
-      <header class="topbar"><button id="menuToggle" class="menu-toggle" type="button" aria-label="Toggle menu" aria-expanded="false">☰</button><span class="topbar-message">✨ Your French learning adventure begins here</span><a class="topbar-cta" href="#enroll">Join our classes <span>↗</span></a></header>
-      <main id="main">
-        <section class="hero section" id="home">
-          <div class="hero-sparkle sparkle-one">✳</div><div class="hero-sparkle sparkle-two">✦</div>
-          <div class="hero-copy"><div class="eyebrow light">🇫🇷 BONJOUR & WELCOME!</div><h1>Welcome to<br /><em>French with</em><br /><span>Amis!</span></h1><p>Big dreams start with a little <strong>bonjour.</strong> Learn French with confidence, creativity, and a whole lot of fun — together with your amis!</p><div class="hero-actions"><a class="button button-light" href="#courses">Explore Courses <span>↗</span></a><a class="button button-outline" href="#about">Meet Your Teachers →</a></div><div class="hero-badges"><span>✦ Beginner friendly</span><span>✦ TCF preparation</span><span>✦ Practical learning</span></div></div>
-          <div class="hero-art" aria-hidden="true"><div class="sun-circle"></div><div class="eiffel">♜</div><div class="floating-card hello">Bonjour! <span>👋</span></div><div class="floating-card vocab">Salut! <span>💬</span></div><div class="hero-flower">✿</div><div class="hero-heart">♥</div><div class="art-caption">PARIS IS CALLING ✨</div></div>
-        </section>
-        <section class="intro section" id="about"><div class="section-heading centered"><div class="eyebrow">THE PEOPLE BEHIND THE MAGIC</div><h2>Meet your French <span>besties!</span> 💜</h2><p>We're Astpreet and Komalpreet, the co-founders of French with Amis. We're here to make learning French feel welcoming, clear, and exciting.</p></div>
-          <div class="profile-grid"><article class="profile-card pink"><div class="profile-image"><img src="images/astpreet.jpg" alt="Astpreet" data-fallback="A" /></div><span class="role">CO-FOUNDER & TEACHER</span><h3>Astpreet</h3><p>Meet Astpreet and discover her approach to helping students learn French step by step.</p><button type="button" class="profile-button" data-profile="astpreet">Get to know Astpreet ↗</button></article>
-          <article class="profile-card lavender"><div class="profile-image"><img src="images/komalpreet.jpg" alt="Komalpreet" data-fallback="K" /></div><span class="role">CO-FOUNDER & TEACHER</span><h3>Komalpreet</h3><p>Meet Komalpreet and learn more about her passion for sharing French with students.</p><button type="button" class="profile-button" data-profile="komalpreet">Get to know Komalpreet ↗</button></article></div>
-        </section>
-        <section class="courses-section section" id="courses"><div class="section-heading"><div class="eyebrow">YOUR NEXT CHAPTER STARTS HERE</div><h2>Find your <span>French journey</span> ✨</h2><p>From your very first words to exam preparation, explore a learning path that fits your goals.</p></div><div class="course-grid"><article class="course-card"><div class="course-icon peach">🌱</div><span class="course-tag">START HERE</span><h3>A1 — Beginner French</h3><p>Greetings, introductions, essential verbs, simple grammar, and everyday vocabulary.</p><a href="#enroll">Ask about this course →</a></article><article class="course-card"><div class="course-icon lilac">🌷</div><span class="course-tag">KEEP GROWING</span><h3>A2 — Elementary French</h3><p>Build sentences, talk about routines, share experiences, and grow your confidence.</p><a href="#enroll">Ask about this course →</a></article><article class="course-card"><div class="course-icon yellow">🚀</div><span class="course-tag">LEVEL UP</span><h3>B1 / B2 — Intermediate</h3><p>Develop fluency, stronger grammar, richer vocabulary, and structured expression.</p><a href="#enroll">Ask about this course →</a></article><article class="course-card featured"><div class="course-icon white">🎯</div><span class="course-tag">EXAM FOCUS</span><h3>TCF Preparation</h3><p>Practice speaking, writing, reading, and listening with guided strategies.</p><a href="#enroll">Ask about TCF classes →</a></article></div></section>
-        <section class="notes-section section" id="notes"><div class="section-heading"><div class="eyebrow">MADE FOR YOUR NOTEBOOK</div><h2>Handwritten notes, <span>made with love</span> 📝</h2><p>Explore study notes and resources. Add your own scanned pages or photos to share them with learners.</p></div><div class="notes-grid"><article class="note-card"><div class="note-art note-art-one">📒<span>VOCABULAIRE</span></div><h3>Vocabulary Notes</h3><p>Everyday French words and useful expressions.</p><a href="notes/vocabulary.html">Open notes ↗</a></article><article class="note-card"><div class="note-art note-art-two">📗<span>GRAMMAIRE</span></div><h3>Grammar Notes</h3><p>Understand French grammar one step at a time.</p><a href="notes/grammar.html">Open notes ↗</a></article><article class="note-card"><div class="note-art note-art-three">📘<span>VERBES</span></div><h3>Verb Notes</h3><p>Conjugations and useful example sentences.</p><a href="notes/verbs.html">Open notes ↗</a></article></div><p class="note-hint">The sample note pages are ready for you to replace with your own handwritten-note photos.</p></section>
-        <section class="resource-section section" id="speaking"><div class="resource-text"><div class="eyebrow">SPEAK WITH CONFIDENCE</div><h2>Speaking notes <span>that make you shine!</span> 🎤</h2><p>Practice introducing yourself, expressing opinions, describing experiences, and answering TCF-style questions. Upload your handwritten speaking pages to your notes folder and link them here.</p><a class="button button-dark" href="notes/speaking.html">Explore speaking notes ↗</a></div><div class="resource-visual speaking-visual"><div class="visual-paper"><div class="paper-label">EXPRESSION ORALE</div><div class="paper-title">Je me présente ✨</div><div class="paper-line"></div><div class="paper-line short"></div><div class="paper-line"></div><div class="paper-line medium"></div><span>💬</span></div></div></section>
-        <section class="resource-section section writing-section" id="writing"><div class="resource-visual writing-visual"><div class="visual-paper"><div class="paper-label">EXPRESSION ÉCRITE</div><div class="paper-title">Écrivons ensemble! ✍️</div><div class="paper-line"></div><div class="paper-line"></div><div class="paper-line medium"></div><div class="paper-line short"></div><span>💌</span></div></div><div class="resource-text"><div class="eyebrow">WRITE WITH PURPOSE</div><h2>Writing notes <span>& useful templates</span> ✍️</h2><p>Explore sentence starters, message structures, linking words, and writing practice for different levels and TCF tasks.</p><a class="button button-dark" href="notes/writing.html">Explore writing notes ↗</a></div></section>
-        <section class="tips-section section" id="tips"><div class="section-heading centered"><div class="eyebrow">LITTLE TIPS, BIG PROGRESS</div><h2>Tips & <span>tricks</span> 💡</h2><p>Simple habits that make learning French easier and more enjoyable.</p></div><div class="tips-grid"><div class="tip"><span>🎧</span><h3>Listen every day</h3><p>Try short French videos or podcasts, even for 10 minutes.</p></div><div class="tip"><span>🗣️</span><h3>Speak out loud</h3><p>Practice complete sentences instead of memorizing isolated words.</p></div><div class="tip"><span>📝</span><h3>Keep a word journal</h3><p>Write new vocabulary with examples you can actually use.</p></div><div class="tip"><span>⭐</span><h3>Be consistent</h3><p>A little practice each day builds long-term confidence.</p></div></div></section>
-        <section class="enroll-section section" id="enroll"><div class="enroll-copy"><div class="eyebrow light">READY TO SAY OUI?</div><h2>Let's make your French dreams <em>happen!</em> 💌</h2><p>Interested in joining a class? Tell us what you'd like to learn. This form opens your email app with your inquiry — no information is stored on this website.</p><div class="enroll-stars">✦ Learn together &nbsp; ✦ Grow together &nbsp; ✦ Shine together</div></div><form id="enrollForm" class="enroll-form"><label for="studentName">Your name</label><input id="studentName" name="studentName" type="text" placeholder="Your full name" required maxlength="100"/><label for="studentEmail">Email address</label><input id="studentEmail" name="studentEmail" type="email" placeholder="you@example.com" required maxlength="150"/><label for="interest">I'm interested in</label><select id="interest" name="interest" required><option value="">Choose a course</option><option>A1 Beginner French</option><option>A2 Elementary French</option><option>B1 / B2 Intermediate French</option><option>TCF Preparation</option><option>Notes and resources</option></select><label for="message">Message (optional)</label><textarea id="message" name="message" rows="3" placeholder="Tell us about your learning goals..."></textarea><button class="button submit-button" type="submit">Prepare enrollment email ↗</button><small id="formStatus" role="status">Replace the contact email in script.js before accepting inquiries.</small></form></section>
-      </main><footer><strong>French with Amis <span>♥</span></strong><p>Learning is better together. Made by Astpreet & Komalpreet.</p><small>© <span id="year"></span> French with Amis. All rights reserved.</small></footer>
+
+  <!-- MOBILE MENU BUTTON -->
+  <button class="menu-toggle"
+          id="menuToggle"
+          aria-label="Open navigation menu"
+          aria-controls="sidebar"
+          aria-expanded="false">
+    ☰
+  </button>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar" id="sidebar">
+    <h2>🇫🇷 French with Amis</h2>
+
+    <nav aria-label="Main navigation">
+      <a href="#home">🏠 Home</a>
+      <a href="#about">💗 About Us</a>
+      <a href="#teachers">👩‍🏫 Meet Our Teachers</a>
+      <a href="#courses">📚 French Courses</a>
+      <a href="#notes">📝 Handwritten Notes</a>
+      <a href="#speaking">🎤 Speaking Notes</a>
+      <a href="#writing">✍️ Writing Notes</a>
+      <a href="#tips">💡 Tips & Tricks</a>
+      <a href="#enroll">🎓 Enroll Now</a>
+      <a href="#contact">📩 Contact Us</a>
+    </nav>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="main-content">
+
+    <!-- HOME -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <p>🇫🇷 Bonjour! Bienvenue! 🇫🇷</p>
+
+        <h1>
+          Welcome to<br>
+          <span class="highlight">French with Amis</span>
+        </h1>
+
+        <p>
+          Learn French with confidence, creativity,
+          and friendship!
+        </p>
+
+        <p>
+          From your first Bonjour to your next
+          French language milestone, we are here
+          to help you every step of the way.
+        </p>
+
+        <a href="#courses" class="btn">
+          Explore Our Courses →
+        </a>
+
+        <a href="#teachers" class="btn">
+          Meet Your Teachers
+        </a>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about-section">
+      <h2 class="section-title">
+        💕 A Little About Us
+      </h2>
+
+      <p>
+        Welcome to French with Amis, a friendly
+        French learning space created by
+        Astpreet and Komalpreet.
+      </p>
+
+      <p>
+        We believe that learning French should
+        be enjoyable, organized, practical,
+        and accessible.
+      </p>
+
+      <p>
+        Our goal is to help learners build
+        confidence through clear explanations,
+        useful vocabulary, grammar lessons,
+        speaking practice, writing strategies,
+        and helpful study notes.
+      </p>
+
+      <p>
+        Whether you are a complete beginner
+        or preparing for the TCF exam,
+        you are welcome here!
+      </p>
+    </section>
+
+    <!-- TEACHERS -->
+    <section id="teachers">
+      <h2 class="section-title">
+        👩‍🏫 Meet Your French Teachers
+      </h2>
+
+      <p class="section-subtitle">
+        Two friends, one shared passion for
+        helping students learn French.
+        Click on a teacher to learn more.
+      </p>
+
+      <div class="teacher-grid">
+
+        <!-- ASTPREET -->
+        <article class="teacher-card">
+          <img src="images/astpreet.jpg"
+               alt="Astpreet - Co-founder"
+               onerror="this.src='https://placehold.co/300x300/f9d5ed/683f91?text=Astpreet'">
+
+          <h3>Astpreet</h3>
+          <p class="role">Co-Founder</p>
+
+          <p>
+            French learning, study resources,
+            and student support.
+          </p>
+
+          <button class="btn"
+                  type="button"
+                  data-profile="astpreet">
+            Get to Know Astpreet →
+          </button>
+        </article>
+
+        <!-- KOMALPREET -->
+        <article class="teacher-card">
+          <img src="images/komalpreet.jpg"
+               alt="Komalpreet - Co-founder"
+               onerror="this.src='https://placehold.co/300x300/e1d7ff/683f91?text=Komalpreet'">
+
+          <h3>Komalpreet</h3>
+          <p class="role">Co-Founder</p>
+
+          <p>
+            French lessons, learning support,
+            and educational resources.
+          </p>
+
+          <button class="btn"
+                  type="button"
+                  data-profile="komalpreet">
+            Get to Know Komalpreet →
+          </button>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- PROFILE MODAL -->
+    <div class="modal"
+         id="profileModal"
+         role="dialog"
+         aria-modal="true"
+         aria-labelledby="modalName"
+         aria-hidden="true">
+
+      <div class="modal-content">
+        <button class="close-modal"
+                id="closeModal"
+                type="button"
+                aria-label="Close profile">
+          &times;
+        </button>
+
+        <h2 id="modalName"></h2>
+        <p id="modalRole"></p>
+        <div id="modalBio"></div>
+      </div>
     </div>
-  </div>
-  <dialog id="profileDialog" class="profile-dialog"><button type="button" id="closeDialog" class="close-dialog" aria-label="Close profile">×</button><div id="dialogContent"></div></dialog>
+
+    <!-- COURSES -->
+    <section id="courses">
+      <h2 class="section-title">
+        📚 Explore Our French Courses
+      </h2>
+
+      <p class="section-subtitle">
+        Build your French skills step by step,
+        from beginner to advanced.
+      </p>
+
+      <div class="course-grid">
+
+        <article class="course-card">
+          <span class="course-badge">A1 Beginner</span>
+          <h3>🌸 French A1</h3>
+          <p>
+            Alphabet, pronunciation, greetings,
+            introductions, basic vocabulary,
+            everyday expressions and grammar.
+          </p>
+          <a href="#enroll" class="btn">
+            Enquire Now
+          </a>
+        </article>
+
+        <article class="course-card">
+          <span class="course-badge">A2 Elementary</span>
+          <h3>🌷 French A2</h3>
+          <p>
+            Daily conversations, past and future
+            tenses, sentence building, listening,
+            and practical communication.
+          </p>
+          <a href="#enroll" class="btn">
+            Enquire Now
+          </a>
+        </article>
+
+        <article class="course-card">
+          <span class="course-badge">B1 Intermediate</span>
+          <h3>🌼 French B1</h3>
+          <p>
+            Expressing opinions, giving reasons,
+            improving fluency, writing paragraphs,
+            and developing comprehension.
+          </p>
+          <a href="#enroll" class="btn">
+            Enquire Now
+          </a>
+        </article>
+
+        <article class="course-card">
+          <span class="course-badge">B2 Upper Intermediate</span>
+          <h3>🌺 French B2</h3>
+          <p>
+            Complex grammar, structured arguments,
+            debates, advanced vocabulary,
+            and confident communication.
+          </p>
+          <a href="#enroll" class="btn">
+            Enquire Now
+          </a>
+        </article>
+
+        <article class="course-card">
+          <span class="course-badge">Exam Preparation</span>
+          <h3>🎯 TCF Preparation</h3>
+          <p>
+            Speaking practice, writing tasks,
+            reading strategies, listening
+            exercises and exam techniques.
+          </p>
+          <a href="#enroll" class="btn">
+            Enquire Now
+          </a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- HANDWRITTEN NOTES -->
+    <section id="notes">
+      <h2 class="section-title">
+        📝 Our Handwritten French Notes
+      </h2>
+
+      <p class="section-subtitle">
+        Explore organized study resources.
+        More handwritten notes will be added here.
+      </p>
+
+      <div class="notes-grid">
+
+        <article class="note-card">
+          <img src="images/grammar-notes.jpg"
+               alt="French grammar notes"
+               onerror="this.src='https://placehold.co/500x350/ffe1ef/743db0?text=Grammar+Notes'">
+          <h3>French Grammar</h3>
+          <p>
+            Articles, verbs, sentence structure,
+            and grammar explanations.
+          </p>
+        </article>
+
+        <article class="note-card">
+          <img src="images/vocabulary-notes.jpg"
+               alt="French vocabulary notes"
+               onerror="this.src='https://placehold.co/500x350/e4ddff/743db0?text=Vocabulary+Notes'">
+          <h3>Vocabulary Notes</h3>
+          <p>
+            Everyday vocabulary, useful words,
+            and expressions.
+          </p>
+        </article>
+
+        <article class="note-card">
+          <img src="images/verb-notes.jpg"
+               alt="French verb notes"
+               onerror="this.src='https://placehold.co/500x350/dcf2ff/743db0?text=Verb+Notes'">
+          <h3>Verb Conjugations</h3>
+          <p>
+            Common French verbs and
+            their conjugation patterns.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- SPEAKING -->
+    <section id="speaking" class="speaking-section">
+      <h2 class="section-title">
+        🎤 French Speaking Notes
+      </h2>
+
+      <p>
+        Improve your French speaking skills
+        with practical examples and
+        structured speaking practice.
+      </p>
+
+      <div class="notes-grid">
+
+        <article class="note-card">
+          <img src="images/speaking-1.jpg"
+               alt="Speaking practice notes"
+               onerror="this.src='https://placehold.co/500x350/ffe1ef/743db0?text=Speaking+Task+1'">
+          <h3>Speaking Task 1</h3>
+          <p>Personal introductions and questions.</p>
+        </article>
+
+        <article class="note-card">
+          <img src="images/speaking-2.jpg"
+               alt="Speaking conversation notes"
+               onerror="this.src='https://placehold.co/500x350/e4ddff/743db0?text=Speaking+Task+2'">
+          <h3>Speaking Task 2</h3>
+          <p>Interactive conversations and questions.</p>
+        </article>
+
+        <article class="note-card">
+          <img src="images/speaking-3.jpg"
+               alt="Speaking opinion notes"
+               onerror="this.src='https://placehold.co/500x350/dcf2ff/743db0?text=Speaking+Task+3'">
+          <h3>Speaking Task 3</h3>
+          <p>Expressing and supporting opinions.</p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- WRITING -->
+    <section id="writing" class="writing-section">
+      <h2 class="section-title">
+        ✍️ French Writing Notes
+      </h2>
+
+      <p>
+        Learn how to organize your writing,
+        connect ideas, and develop
+        clear French sentences.
+      </p>
+
+      <div class="course-grid">
+
+        <article class="course-card">
+          <h3>📩 Emails & Messages</h3>
+          <p>
+            Practice formal and informal
+            French messages.
+          </p>
+        </article>
+
+        <article class="course-card">
+          <h3>📝 Paragraph Writing</h3>
+          <p>
+            Learn to structure paragraphs
+            with useful connectors.
+          </p>
+        </article>
+
+        <article class="course-card">
+          <h3>🎯 TCF Writing</h3>
+          <p>
+            Explore writing tasks,
+            organization, and strategies.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- TIPS -->
+    <section id="tips" class="tips-section">
+      <h2 class="section-title">
+        💡 French Tips & Tricks
+      </h2>
+
+      <div class="tip-card">
+        <h3>🌟 Tip 1: Practice Every Day</h3>
+        <p>
+          Spend 15–30 minutes reviewing
+          French vocabulary and grammar.
+        </p>
+      </div>
+
+      <div class="tip-card">
+        <h3>🎧 Tip 2: Listen to French</h3>
+        <p>
+          Listen to beginner-friendly
+          French podcasts and conversations.
+        </p>
+      </div>
+
+      <div class="tip-card">
+        <h3>🗣️ Tip 3: Speak Out Loud</h3>
+        <p>
+          Practice speaking French
+          even when studying alone.
+        </p>
+      </div>
+
+      <div class="tip-card">
+        <h3>📒 Tip 4: Keep a Vocabulary Notebook</h3>
+        <p>
+          Write new words, their meanings,
+          and example sentences.
+        </p>
+      </div>
+    </section>
+
+    <!-- ENROLLMENT -->
+    <section id="enroll" class="enrollment-section">
+      <h2 class="section-title">
+        🎓 Start Your French Journey
+      </h2>
+
+      <p class="section-subtitle">
+        Interested in learning with us?
+        Send an enrollment inquiry.
+      </p>
+
+      <form id="enrollmentForm">
+
+        <label for="studentName">Full Name</label>
+        <input type="text"
+               id="studentName"
+               name="studentName"
+               placeholder="Enter your full name"
+               required>
+
+        <label for="studentEmail">Email Address</label>
+        <input type="email"
+               id="studentEmail"
+               name="studentEmail"
+               placeholder="Enter your email"
+               required>
+
+        <label for="studentCourse">Choose Your Course</label>
+        <select id="studentCourse"
+                name="studentCourse"
+                required>
+          <option value="">Select a course</option>
+          <option value="French A1">French A1</option>
+          <option value="French A2">French A2</option>
+          <option value="French B1">French B1</option>
+          <option value="French B2">French B2</option>
+          <option value="TCF Preparation">
+            TCF Preparation
+          </option>
+        </select>
+
+        <label for="studentMessage">
+          Your Message
+        </label>
+
+        <textarea id="studentMessage"
+                  name="studentMessage"
+                  placeholder="Tell us about your French learning goals..."></textarea>
+
+        <button type="submit">
+          Send Enrollment Inquiry 💌
+        </button>
+
+        <p id="formStatus" aria-live="polite"></p>
+
+      </form>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="about-section">
+      <h2 class="section-title">
+        💌 Contact French with Amis
+      </h2>
+
+      <p>
+        Questions about courses,
+        notes or French learning?
+      </p>
+
+      <p>
+        Email:
+        <a href="mailto:astpreetgill@gmail.com">
+          astpreetgill@gmail.com
+        </a>
+      </p>
+
+      <p>
+        We would love to hear from you!
+      </p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <h3>🇫🇷 French with Amis</h3>
+      <p>
+        Learn French • Build Confidence • Grow Together
+      </p>
+      <p>
+        Created by Astpreet & Komalpreet
+      </p>
+      <p>
+        © <span id="year"></span>
+        French with Amis. All rights reserved.
+      </p>
+    </footer>
+
+  </main>
 </body>
 </html>
