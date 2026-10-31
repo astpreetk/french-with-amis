@@ -1,0 +1,851 @@
+
+/* ==========================================
+   FRENCH WITH AMIS
+   Complete Website Stylesheet
+   ========================================== */
+
+/* 1. COLORS AND VARIABLES */
+
+:root {
+  --pink: #ff4f9a;
+  --light-pink: #ffe2ef;
+  --purple: #7854d8;
+  --dark-purple: #39216c;
+  --lavender: #f0e8ff;
+  --blue: #4b9ce5;
+  --light-blue: #e6f4ff;
+  --yellow: #ffd56b;
+  --cream: #fffaf2;
+  --white: #ffffff;
+  --dark: #28213e;
+  --gray: #716b82;
+
+  --gradient: linear-gradient(
+    135deg,
+    #ff5ca8 0%,
+    #aa70e9 50%,
+    #6389ee 100%
+  );
+
+  --shadow: 0 10px 30px rgba(64, 39, 110, 0.12);
+  --radius: 20px;
+  --sidebar-width: 255px;
+}
+
+/* 2. BASIC RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 30px;
+}
+
+body {
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(
+    135deg,
+    #fff3f9,
+    #f5efff,
+    #eaf7ff
+  );
+  color: var(--dark);
+  line-height: 1.7;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.3;
+}
+
+h2 {
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  color: var(--dark-purple);
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 12px;
+}
+
+/* 3. SIDEBAR NAVIGATION */
+
+.sidebar,
+.side-bar,
+aside.sidebar {
+  width: var(--sidebar-width);
+  min-height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+
+  background: linear-gradient(
+    180deg,
+    #4d2c88,
+    #7c4ed3,
+    #e75caa
+  );
+
+  padding: 30px 18px;
+  color: white;
+  box-shadow: 5px 0 25px rgba(40, 20, 90, 0.15);
+  overflow-y: auto;
+}
+
+.sidebar h2,
+.sidebar h3,
+.sidebar .logo,
+.sidebar .brand {
+  color: white;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.sidebar a,
+.sidebar button {
+  display: block;
+  width: 100%;
+  color: white;
+  padding: 13px 15px;
+  margin: 7px 0;
+  border-radius: 12px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.sidebar a:hover,
+.sidebar a.active,
+.sidebar button:hover {
+  background: rgba(255, 255, 255, 0.22);
+  transform: translateX(5px);
+}
+
+.sidebar button {
+  background: transparent;
+  border: none;
+  text-align: left;
+}
+
+/* 4. MAIN CONTENT */
+
+.main-content,
+.main,
+main {
+  margin-left: var(--sidebar-width);
+  padding: 30px 5%;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 65px 0;
+}
+
+.section-title {
+  text-align: center;
+  font-size: clamp(1.9rem, 4vw, 2.7rem);
+  color: var(--dark-purple);
+  margin-bottom: 18px;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: var(--gray);
+  max-width: 680px;
+  margin: 0 auto 35px;
+}
+
+/* 5. WELCOME HERO SECTION */
+
+.hero,
+.hero-section,
+.welcome-section {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+
+  background: var(--gradient);
+  color: white;
+  padding: 100px 35px;
+  border-radius: 30px;
+  box-shadow: var(--shadow);
+}
+
+.hero::before,
+.welcome-section::before {
+  content: "";
+  position: absolute;
+  width: 270px;
+  height: 270px;
+  background: rgba(255,255,255,0.12);
+  border-radius: 50%;
+  top: -100px;
+  right: -70px;
+}
+
+.hero::after,
+.welcome-section::after {
+  content: "";
+  position: absolute;
+  width: 190px;
+  height: 190px;
+  background: rgba(255,255,255,0.10);
+  border-radius: 50%;
+  bottom: -90px;
+  left: -40px;
+}
+
+.hero h1,
+.welcome-section h1 {
+  font-size: clamp(2.5rem, 5vw, 5rem);
+  color: white;
+  font-weight: 800;
+  margin-bottom: 22px;
+  position: relative;
+  z-index: 1;
+}
+
+.hero p,
+.welcome-section p {
+  max-width: 750px;
+  margin: 0 auto 28px;
+  font-size: 1.15rem;
+  position: relative;
+  z-index: 1;
+}
+
+.hero .highlight {
+  color: #ffe37c;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* 6. BUTTONS */
+
+.btn,
+.button,
+.cta-button,
+.enroll-btn {
+  display: inline-block;
+  background: var(--gradient);
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 1rem;
+  box-shadow: 0 8px 22px rgba(120,84,216,0.25);
+  transition: transform 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+.btn:hover,
+.button:hover,
+.cta-button:hover,
+.enroll-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(120,84,216,0.35);
+}
+
+.hero .btn,
+.hero .cta-button {
+  background: white;
+  color: var(--dark-purple);
+}
+
+.btn-secondary {
+  background: white;
+  color: var(--purple);
+  border: 2px solid var(--purple);
+}
+
+/* 7. ABOUT US SECTION */
+
+.about,
+.about-section {
+  background: white;
+  padding: 55px 35px;
+  border-radius: var(--radius);
+  margin-top: 35px;
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+.about p,
+.about-section p {
+  max-width: 850px;
+  margin: 0 auto 15px;
+  color: var(--gray);
+  font-size: 1.05rem;
+}
+
+/* 8. TEACHER PROFILES */
+
+.teacher-grid,
+.teachers-grid,
+.profile-grid,
+.profiles {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 30px;
+  margin-top: 35px;
+}
+
+.teacher-card,
+.profile-card {
+  background: white;
+  border-radius: 24px;
+  padding: 35px 25px;
+  text-align: center;
+  box-shadow: var(--shadow);
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.teacher-card:hover,
+.profile-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--pink);
+  box-shadow: 0 18px 38px rgba(120,84,216,0.2);
+}
+
+.teacher-card img,
+.profile-card img,
+.teacher-photo {
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 6px solid var(--light-pink);
+  margin-bottom: 20px;
+  box-shadow: 0 8px 25px rgba(120,84,216,0.15);
+}
+
+.teacher-card h3,
+.profile-card h3 {
+  color: var(--dark-purple);
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+.teacher-card p,
+.profile-card p {
+  color: var(--gray);
+}
+
+.teacher-card .role,
+.profile-card .role {
+  color: var(--pink);
+  font-weight: 700;
+}
+
+/* 9. PROFILE DETAIL AND MODAL */
+
+.profile-details,
+.teacher-details {
+  background: white;
+  border-radius: 22px;
+  padding: 35px;
+  margin-top: 25px;
+  box-shadow: var(--shadow);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  background: rgba(30, 15, 60, 0.7);
+  padding: 20px;
+  overflow-y: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal.show,
+.modal.active,
+.modal[aria-hidden="false"] {
+  display: flex;
+}
+
+.modal-content {
+  background: white;
+  width: 100%;
+  max-width: 650px;
+  border-radius: 25px;
+  padding: 35px;
+  position: relative;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+}
+
+.close,
+.close-modal {
+  position: absolute;
+  top: 12px;
+  right: 18px;
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: var(--dark-purple);
+  cursor: pointer;
+}
+
+/* 10. COURSE CARDS */
+
+.course-grid,
+.courses-grid,
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(230px, 1fr)
+  );
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.course-card,
+.card {
+  background: white;
+  padding: 30px 25px;
+  border-radius: 22px;
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
+  border-top: 6px solid var(--purple);
+}
+
+.course-card:nth-child(2),
+.card:nth-child(2) {
+  border-top-color: var(--pink);
+}
+
+.course-card:nth-child(3),
+.card:nth-child(3) {
+  border-top-color: var(--blue);
+}
+
+.course-card:nth-child(4),
+.card:nth-child(4) {
+  border-top-color: #ffbd4a;
+}
+
+.course-card:hover,
+.card:hover {
+  transform: translateY(-7px);
+}
+
+.course-card h3,
+.card h3 {
+  font-size: 1.4rem;
+  color: var(--dark-purple);
+  margin-bottom: 12px;
+}
+
+.course-card p,
+.card p {
+  color: var(--gray);
+}
+
+.course-badge,
+.level-badge {
+  display: inline-block;
+  background: var(--lavender);
+  color: var(--dark-purple);
+  padding: 6px 14px;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+/* 11. NOTES SECTION */
+
+.notes-grid,
+.resources-grid,
+.note-gallery {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(220px, 1fr)
+  );
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.note-card,
+.resource-card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
+}
+
+.note-card:hover,
+.resource-card:hover {
+  transform: translateY(-6px);
+}
+
+.note-card img,
+.resource-card img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  display: block;
+}
+
+.note-card h3,
+.resource-card h3 {
+  padding: 15px 18px 0;
+  color: var(--dark-purple);
+}
+
+.note-card p,
+.resource-card p {
+  padding: 5px 18px 15px;
+  color: var(--gray);
+}
+
+.note-card a,
+.resource-card a {
+  display: inline-block;
+  margin: 0 18px 20px;
+  color: var(--purple);
+  font-weight: 700;
+}
+
+/* 12. SPEAKING AND WRITING */
+
+.speaking-section,
+.writing-section,
+.tips-section {
+  background: white;
+  padding: 45px 30px;
+  border-radius: 25px;
+  box-shadow: var(--shadow);
+  margin: 25px 0;
+}
+
+.speaking-section {
+  background: linear-gradient(135deg,#fff0f7,#f4eaff);
+}
+
+.writing-section {
+  background: linear-gradient(135deg,#e9f5ff,#f1edff);
+}
+
+.tips-section {
+  background: linear-gradient(135deg,#fff7dd,#ffe8f2);
+}
+
+.tip-card {
+  background: rgba(255,255,255,0.85);
+  padding: 22px;
+  border-radius: 16px;
+  margin: 15px 0;
+  border-left: 5px solid var(--pink);
+}
+
+/* 13. ENROLLMENT FORM */
+
+.enrollment,
+.enrollment-section,
+.contact-section {
+  background: linear-gradient(
+    135deg,
+    #fce8f3,
+    #eae5ff
+  );
+  padding: 50px 30px;
+  border-radius: 25px;
+  margin-top: 35px;
+}
+
+form {
+  max-width: 650px;
+  margin: 25px auto;
+  background: white;
+  padding: 35px;
+  border-radius: 22px;
+  box-shadow: var(--shadow);
+}
+
+form label {
+  display: block;
+  margin-bottom: 7px;
+  font-weight: 600;
+  color: var(--dark-purple);
+}
+
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 13px 15px;
+  margin-bottom: 18px;
+  border: 2px solid #e6dcf4;
+  border-radius: 12px;
+  background: #fcfaff;
+  color: var(--dark);
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+  border-color: var(--purple);
+}
+
+form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+form button {
+  width: 100%;
+  background: var(--gradient);
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 12px;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+/* 14. FOOTER */
+
+footer,
+.footer {
+  background: var(--dark-purple);
+  color: white;
+  padding: 35px 25px;
+  text-align: center;
+  border-radius: 20px;
+  margin-top: 40px;
+}
+
+footer p,
+.footer p {
+  margin-bottom: 8px;
+}
+
+footer a,
+.footer a {
+  color: #ffdaef;
+}
+
+footer a:hover,
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* 15. MOBILE MENU */
+
+.menu-toggle,
+.mobile-menu-btn {
+  display: none;
+  background: var(--purple);
+  color: white;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 12px;
+  font-size: 22px;
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  z-index: 1500;
+  box-shadow: var(--shadow);
+}
+
+/* 16. ANIMATIONS */
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero,
+.teacher-card,
+.course-card,
+.note-card {
+  animation: fadeUp 0.7s ease both;
+}
+
+.teacher-card:nth-child(2),
+.course-card:nth-child(2) {
+  animation-delay: 0.12s;
+}
+
+.course-card:nth-child(3) {
+  animation-delay: 0.22s;
+}
+
+/* 17. RESPONSIVE DESIGN */
+
+@media (max-width: 900px) {
+
+  :root {
+    --sidebar-width: 220px;
+  }
+
+  .main-content,
+  .main,
+  main {
+    padding: 25px 4%;
+  }
+
+  .teacher-grid,
+  .teachers-grid,
+  .profile-grid,
+  .profiles {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .sidebar,
+  .side-bar,
+  aside.sidebar {
+    width: 270px;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+
+  .sidebar.open,
+  .sidebar.active,
+  .sidebar.show {
+    transform: translateX(0);
+  }
+
+  .menu-toggle,
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  .main-content,
+  .main,
+  main {
+    margin-left: 0;
+    padding: 75px 18px 20px;
+  }
+
+  section {
+    padding: 40px 0;
+  }
+
+  .hero,
+  .hero-section,
+  .welcome-section {
+    padding: 75px 22px;
+    border-radius: 22px;
+  }
+
+  .hero h1,
+  .welcome-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .teacher-grid,
+  .teachers-grid,
+  .profile-grid,
+  .profiles {
+    grid-template-columns: 1fr;
+  }
+
+  .course-grid,
+  .courses-grid,
+  .notes-grid,
+  .resources-grid {
+    grid-template-columns: 1fr;
+  }
+
+  form {
+    padding: 25px 18px;
+  }
+
+  .modal-content {
+    padding: 28px 20px;
+  }
+}
+
+@media (max-width: 420px) {
+
+  .hero h1,
+  .welcome-section h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .teacher-card img,
+  .profile-card img {
+    width: 145px;
+    height: 145px;
+  }
+
+  h2,
+  .section-title {
+    font-size: 1.7rem;
+  }
+}
+
+/* 18. ACCESSIBILITY */
+
+:focus-visible {
+  outline: 3px solid var(--pink);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
